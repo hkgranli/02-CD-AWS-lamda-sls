@@ -23,7 +23,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: build-artifact
-          path: ./sentiment-demo/.aws-sam/build
+          path: ./sentiment-demo/.aws-sam/
   deploy:
     needs: build
     runs-on: ubuntu-latest
