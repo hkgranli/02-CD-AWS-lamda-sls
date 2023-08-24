@@ -23,7 +23,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: build-artifact
-          path: ./build
+          path: ./.aws-sam/build
   deploy:
     needs: build
     runs-on: ubuntu-latest
